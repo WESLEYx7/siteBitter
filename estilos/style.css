@@ -2,7 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'CoconPro';
+    font-family: "ff-cocon-pro", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 800pt;
 }
 
 header {
@@ -22,7 +27,7 @@ header .links {
 header .links a {
     text-decoration: none;
     color: white;
-    font-size: 25pt;
+    font-size: 20pt;
     margin-right: 28pt;
 }
 
@@ -46,7 +51,7 @@ section .abaPrincipal {
 
 section .abaPrincipal h1 {
     font-size: 40pt;
-    font-weight: bold;
+    font-weight: 700;
     color: #0E1E6C;
     margin-top: 70pt;
 }
@@ -55,6 +60,7 @@ section .abaPrincipal p {
     color: #474747;
     font-size: 23px;
     margin-top: 30pt;
+    font-style: normal;
 }
 
 #imagemPrincipal {
@@ -70,14 +76,34 @@ section .abaPrincipal p {
     margin-top: 30pt;
     border-radius: 5pt;
     color: white;
-    font-weight: 600;
     font-size: 18pt;
     cursor: pointer;
     border: none;
 }
 
 .abaSecundaria {
-    width: 80%;
-    height: 50pt;
-    margin-top: 80pt;
+    width: 100%;
+    height: 110pt;
+    margin-top: 135pt;
+    display: flex;
+    justify-content: center;
 }
+
+.abaSecundaria .conteudo {
+    width: 90%;
+    height: 110pt;
+    border-radius: 40pt;
+    box-shadow: 2pt 2pt 2pt 2pt #e7e7e7;
+}
+
+.abaSecundaria .conteudo .divTituloSecundario {
+    display: flex;
+    align-items: center;
+    width: 130pt;
+}
+
+.abaSecundaria .conteudo .tituloSecundario {
+    color: #0E1E6C;
+    font-size: 20pt;
+}
+
