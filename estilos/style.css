@@ -7,7 +7,7 @@
 
 body {
     width: 100%;
-    height: 800pt;
+    height: 1200pt;
 }
 
 header {
@@ -61,6 +61,7 @@ section .abaPrincipal p {
     font-size: 23px;
     margin-top: 30pt;
     font-style: normal;
+    font-weight: lighter;
 }
 
 #imagemPrincipal {
@@ -94,16 +95,89 @@ section .abaPrincipal p {
     height: 110pt;
     border-radius: 40pt;
     box-shadow: 2pt 2pt 2pt 2pt #e7e7e7;
+    display: flex;
 }
 
 .abaSecundaria .conteudo .divTituloSecundario {
     display: flex;
     align-items: center;
+    margin-left: 30pt;
     width: 130pt;
 }
 
 .abaSecundaria .conteudo .tituloSecundario {
     color: #0E1E6C;
-    font-size: 20pt;
+    font-size: 19pt;
 }
 
+.abaSecundaria .conteudo .conteudoTexto {
+    color: #474747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 75%;
+    font-weight: lighter;
+}
+
+.abaSecundaria .conteudo .conteudoTexto #botaoSaibaMais {
+    width: 140px;
+    height: 35px;
+    border-radius: 5pt;
+    border: none;
+    background-color: #0E1E6C;
+    color: white;
+    margin-top: 30pt;
+    cursor: pointer;
+}
+
+.abaSecundaria .conteudo .conteudoTexto .divBotaoSaibaMais{
+    width: 140px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tituloBaixo {
+    width: 100%;
+    height: 100pt;
+    margin-top: 60pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tituloBaixo #tituloAbaixoPg {
+    text-align: center;
+    font-size: 25pt;
+    color: #0E1E6C;
+    font-weight: lighter;
+}
+
+.tituloBaixo #spanTxtSecundario{
+    font-weight: bolder;
+}
+
+.divCards {
+    margin-top: 30pt;
+    width: 100%;
+    height: 250pt;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.divCards .card {
+    height: 90%;
+    width: 80pt;
+    background-color: white;
+}
+
+.divCards .card .propImg {
+    width: 50pt;
+    height: 50pt;
+}
