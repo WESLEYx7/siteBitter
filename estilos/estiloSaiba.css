@@ -22,6 +22,7 @@ header {
 
 header .links {
     display: flex;
+    flex-wrap: wrap; /* Permite que os links quebrem para a próxima linha em telas menores */
 }
 
 header .links a {
@@ -85,17 +86,74 @@ section .abaPrincipal #paragrafoPrimeiro {
 
 .abaSecundaria {
     width: 100%;
-    height: 250pt;
+    min-height: 250pt; /* Em vez de height, use min-height para permitir crescimento quando necessário */
     margin-top: 135pt;
     display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente em telas menores */
     justify-content: center;
     background-color: antiquewhite;
 }
 
 .abaSecundaria .areaReal h2 {
-    text-align: ce;
+    text-align: center; /* Correção da propriedade 'ce' para 'center' */
 }
 
 .abaSecundaria .textoArea {
     background-color: #F76D20;
+}
+
+/* Media queries para telas menores */
+@media screen and (max-width: 768px) {
+    header .links a {
+        font-size: 16pt;
+        margin-right: 15pt;
+    }
+
+    header .links #login {
+        margin-top: 10px;
+    }
+
+    section .abaPrincipal h1 {
+        font-size: 32pt;
+        margin-top: 50pt;
+    }
+
+    section .abaPrincipal #paragrafoPrimeiro {
+        font-size: 18px;
+        margin-top: 20pt;
+    }
+
+    #imagemPrincipal {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
+/* Media queries para telas ainda menores */
+@media screen and (max-width: 480px) {
+    header .links a {
+        font-size: 14pt;
+        margin-right: 10pt;
+    }
+
+    header .links #login {
+        margin-top: 5px;
+    }
+
+    section .abaPrincipal h1 {
+        font-size: 28pt;
+        margin-top: 40pt;
+    }
+
+    section .abaPrincipal #paragrafoPrimeiro {
+        font-size: 16px;
+        margin-top: 15pt;
+    }
+
+    #imagemPrincipal {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
 }
