@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "ff-cocon-pro", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 900pt;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #0E1E6C;
+    opacity: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+header .links {
+    display: flex;
+}
+
+header .links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20pt;
+    margin-right: 28pt;
+}
+
+header .links a:hover {
+    color: #F76D20;
+    transition: 0.2s;
+}
+
+header .links #login {
+    border: solid 2pt #ffffff;
+    border-radius: 4pt;
+    font-weight: bold;
+}
+
+header .links #login:hover {
+    border: solid 2pt #fcc1a2;
+}
+
+section {
+    width: 100%;
+    height: 300pt;
+    display: flex;
+    justify-content: center;
+}
+
+section .abaPrincipal {
+    width: 90%;
+    margin-left: 40pt;
+}
+
+section .abaPrincipal h1 {
+    font-size: 40pt;
+    font-weight: 700;
+    color: #0E1E6C;
+    margin-top: 70pt;
+}
+
+section .abaPrincipal #paragrafoPrimeiro {
+    color: #474747;
+    font-size: 20px;
+    margin-top: 30pt;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+#imagemPrincipal {
+    width: 400pt;
+    height: 400pt;
+    margin-right: 25pt;
+}
+
+.segundaArea {
+    margin-top: 30pt;
+}
+
+.abaSecundaria {
+    width: 100%;
+    height: 250pt;
+    margin-top: 135pt;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.abaSecundaria .areaReal h2 {
+    text-align: ce;
+}
+
+.abaSecundaria .textoArea {
+    background-color: #F76D20;
+}

@@ -145,6 +145,11 @@ section .abaPrincipal p {
     cursor: pointer;
 }
 
+#linkSaibaMais {
+    color: white;
+    text-decoration: none;
+}
+
 .abaSecundaria .conteudo .conteudoTexto #botaoSaibaMais:hover {
     background-color: #041152;
 } 
