@@ -31,10 +31,19 @@ header .links a {
     margin-right: 28pt;
 }
 
+header .links a:hover {
+    color: #F76D20;
+    transition: 0.2s;
+}
+
 header .links #login {
     border: solid 2pt #ffffff;
     border-radius: 4pt;
     font-weight: bold;
+}
+
+header .links #login:hover {
+    border: solid 2pt #fcc1a2;
 }
 
 section {
@@ -80,6 +89,11 @@ section .abaPrincipal p {
     font-size: 18pt;
     cursor: pointer;
     border: none;
+}
+
+#botao:hover {
+    background-color: #c04604;
+    transition: 0.2s;
 }
 
 .abaSecundaria {
@@ -131,6 +145,10 @@ section .abaPrincipal p {
     cursor: pointer;
 }
 
+.abaSecundaria .conteudo .conteudoTexto #botaoSaibaMais:hover {
+    background-color: #041152;
+} 
+
 .abaSecundaria .conteudo .conteudoTexto .divBotaoSaibaMais{
     width: 140px;
     height: 100%;
@@ -163,8 +181,7 @@ section .abaPrincipal p {
 .divCards {
     margin-top: 30pt;
     width: 100%;
-    height: 250pt;
-    background-color: antiquewhite;
+    height: 300pt;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -172,12 +189,63 @@ section .abaPrincipal p {
 }
 
 .divCards .card {
-    height: 90%;
-    width: 80pt;
-    background-color: white;
+    height: 260pt;
+    width: 240pt;
+    margin: 30pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8pt;
+    box-shadow: 1pt 1pt 2pt 2pt #d1d0d0;
+    cursor: pointer;
 }
 
 .divCards .card .propImg {
-    width: 50pt;
-    height: 50pt;
+    width: 130pt;
+    height: 130pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divCards .card .cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 110pt;
+}
+
+.divCards .card .divConteudoCard p {
+    color: #474747;
+}
+
+.divCards #cardEmpresa {
+    box-shadow: 1pt 1pt 2pt 2pt #F76D20;
+}
+
+.divCards .card .titulocard {
+    margin-bottom: 5pt;
+}
+
+footer {
+    background-color: #0E1E6C;
+    width: 100%;
+    height: 90pt;
+    margin-top: 50pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+
+footer #spanFooter {
+    font-weight: bold;
+    font-size: 12pt;
 }
