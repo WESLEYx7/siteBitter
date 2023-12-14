@@ -255,6 +255,29 @@ footer #spanFooter {
     font-size: 12pt;
 }
 
+/* Media queries para telas menores */
+@media screen and (max-width: 768px) {
+    header .links a {
+        font-size: 16pt;
+        margin-right: 15pt;
+    }
+
+    header .links #login {
+        margin-top: 10px;
+    }
+
+    section .abaPrincipal h1 {
+        font-size: 32pt;
+        margin-top: 50pt;
+    }
+    
+    #imagemPrincipal {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 480px) {
     header .links a {
         font-size: 14pt;
