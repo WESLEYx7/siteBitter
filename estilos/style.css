@@ -254,3 +254,25 @@ footer #spanFooter {
     font-weight: bold;
     font-size: 12pt;
 }
+
+@media screen and (max-width: 480px) {
+    header .links a {
+        font-size: 14pt;
+        margin-right: 10pt;
+    }
+
+    header .links #login {
+        margin-top: 5px;
+    }
+
+    section .abaPrincipal h1 {
+        font-size: 28pt;
+        margin-top: 40pt;
+    }
+
+    #imagemPrincipal {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+}
