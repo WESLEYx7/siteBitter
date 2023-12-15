@@ -28,7 +28,7 @@ header .links {
 header .links a {
     text-decoration: none;
     color: white;
-    font-size: 20pt;
+    font-size: 14pt;
     margin-left: 35pt;
 }
 
@@ -155,12 +155,12 @@ footer #spanFooter {
 @media screen and (max-width: 480px) {
     header .links a {
         font-size: 14pt;
-        margin-right: 10pt;
     }
 
     header .links #login {
         margin-top: 5px;
     }
+
 
     section .abaPrincipal h1 {
         font-size: 28pt;

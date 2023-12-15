@@ -22,12 +22,13 @@ header {
 
 header .links {
     display: flex;
+    flex-wrap: wrap;
 }
 
 header .links a {
     text-decoration: none;
     color: white;
-    font-size: 20pt;
+    font-size: 14pt;
     margin-left: 35pt;
 }
 
@@ -265,8 +266,8 @@ footer #spanFooter {
 /* Media queries para telas menores */
 @media screen and (max-width: 768px) {
     header .links a {
-        font-size: 16pt;
-        margin-right: 15pt;
+        font-size: 14pt;
+        
     }
 
     header .links #login {
@@ -301,7 +302,6 @@ footer #spanFooter {
 @media screen and (max-width: 480px) {
     header .links a {
         font-size: 14pt;
-        margin-right: 10pt;
     }
 
     header .links #login {
