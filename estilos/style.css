@@ -28,7 +28,7 @@ header .links a {
     text-decoration: none;
     color: white;
     font-size: 20pt;
-    margin-right: 28pt;
+    margin-left: 35pt;
 }
 
 header .links a:hover {
@@ -326,7 +326,7 @@ footer #spanFooter {
     }
 
     footer {
-        margin-top: 360pt;
+        margin-top: 370pt;
     }
 
     section {
