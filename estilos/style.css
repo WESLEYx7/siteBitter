@@ -16,7 +16,7 @@ header {
     background-color: #0E1E6C;
     opacity: 1;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -40,6 +40,7 @@ header .links #login {
     border: solid 2pt #ffffff;
     border-radius: 4pt;
     font-weight: bold;
+    height: auto;
 }
 
 header .links #login:hover {
@@ -62,7 +63,7 @@ section .abaPrincipal h1 {
     font-size: 40pt;
     font-weight: 700;
     color: #0E1E6C;
-    margin-top: 70pt;
+    margin-top: 50px;
 }
 
 section .abaPrincipal p {
@@ -132,6 +133,7 @@ section .abaPrincipal p {
     font-size: 20px;
     width: 75%;
     font-weight: lighter;
+    
 }
 
 .abaSecundaria .conteudo .conteudoTexto #botaoSaibaMais {
@@ -194,7 +196,7 @@ section .abaPrincipal p {
 }
 
 .divCards .card {
-    height: 260pt;
+    height: auto;
     width: 240pt;
     margin: 30pt;
     display: flex;
@@ -204,6 +206,7 @@ section .abaPrincipal p {
     border-radius: 8pt;
     box-shadow: 1pt 1pt 2pt 2pt #d1d0d0;
     cursor: pointer;
+    padding: 20pt;
 }
 
 .divCards .card .propImg {
@@ -226,19 +229,23 @@ section .abaPrincipal p {
     color: #474747;
 }
 
+.divCards .card .divConteudoCard #botaoSaibaMais {
+    margin-top: 15px; /* ou outro valor adequado */
+}
+
 .divCards #cardEmpresa {
     box-shadow: 1pt 1pt 2pt 2pt #F76D20;
 }
 
 .divCards .card .titulocard {
-    margin-bottom: 5pt;
+    margin-bottom: 10px;
 }
 
 footer {
     background-color: #0E1E6C;
     width: 100%;
     height: 90pt;
-    margin-top: 50pt;
+    margin-top: 80pt;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -276,6 +283,19 @@ footer #spanFooter {
         height: auto;
         margin-right: 0;
     }
+    .divCards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 400pt;
+    }
+
+    section {
+        margin-bottom: 570pt;
+    }
+
+    footer {
+        margin-top: 370pt;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -297,5 +317,37 @@ footer #spanFooter {
         width: 100%;
         height: auto;
         margin-right: 0;
+    }
+
+    .divCards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 400pt;
+    }
+
+    footer {
+        margin-top: 360pt;
+    }
+
+    section {
+        margin-bottom: 570pt;
+    }
+
+    .abaSecundaria {
+        /*margin-top: 400pt;*/
+    }
+
+    .tituloBaixo {
+        margin-top: 100pt;
+    }
+
+    .conteudo {
+        margin-top: 20;
+        display: flex;
+        
+    }
+
+    .conteudo .conteudoTexto {
+        height: 150pt;
     }
 }
