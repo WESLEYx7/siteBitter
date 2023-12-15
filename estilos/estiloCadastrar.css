@@ -120,6 +120,34 @@ footer #spanFooter {
     font-size: 12pt;
 }
 
+.concordarInput {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.divSubmit {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 8pt;
+}
+
+.divSubmit #submit {
+    width: 130pt;
+    height: 40pt;
+    cursor: pointer;
+    color: white;
+    background-color: #0E1E6C;
+    font-size: 18px;
+}
+
+.divSubmit #submit:hover {
+    background-color: #030e46;
+    transition: 0.2s;
+}
+
+
 /* Media queries para telas ainda menores */
 @media screen and (max-width: 480px) {
     header .links a {
