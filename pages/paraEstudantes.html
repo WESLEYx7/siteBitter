@@ -30,22 +30,22 @@
         <form action="">
             <div class="emvoltaForm">
                 <label>Nome</label>
-                <input type="email" name="" id="">
+                <input type="email" name="nome" id="">
             </div>
 
             <div class="emvoltaForm">
                 <label>Email</label>
-                <input type="email" name="" id="">
+                <input type="email" name="email" id="">
             </div>
 
             <div class="emvoltaForm">
                 <label>Senha</label>
-                <input type="password" name="" id="">
+                <input type="password" name="senha" id="">
             </div>
 
             <div class="emvoltaForm">
                 <label>Categoria</label>
-                <input type="" name="" id="">
+                <input type="" name="" id="categoria">
             </div>
 
             <div class="concordarInput">
@@ -54,7 +54,7 @@
             </div>
 
             <div class="divSubmit">
-                <input id="submit" type="submit" value="Cadastrar">
+                <input id="submit" onclick="validar()" type="submit" value="Cadastrar">
             </div>
         </form>
     </div>
@@ -64,5 +64,17 @@
             <span id="spanFooter">IEL - Instituto Euvaldo Lodi - Núcleo Regional de Roraima</span></p>
     </footer>
     
+    <script>
+        let nome = document.getElementsByName('nome')[0]
+        let email = document.getElementsByName('email')[0]
+        let senha = document.getElementsByName('senha')[0]
+        let categoria = document.getElementByName('categoria')[0]
+
+        function validar() {
+            if(nome.value === '' || email.value === '' || senha.value === '' || categoria.value === '') {
+                window.alert('Há campos em branco!')
+            }
+        }
+    </script>
 </body>
 </html>

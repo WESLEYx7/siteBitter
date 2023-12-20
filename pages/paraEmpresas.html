@@ -30,27 +30,27 @@
         <form action="">
             <div class="emvoltaForm">
                 <label>Razão Social</label>
-                <input type="email" name="" id="">
+                <input type="name" name="razaoSocial" id="">
             </div>
 
             <div class="emvoltaForm">
                 <label>CNPJ</label>
-                <input type="" name="" id="">
+                <input type="" name="cnpj" id="">
             </div>
-            
+
             <div class="emvoltaForm">
                 <label>Email</label>
-                <input type="email" name="" id="">
+                <input type="email" name="email" id="">
             </div>
 
             <div class="emvoltaForm">
                 <label>Senha</label>
-                <input type="password" name="" id="">
+                <input type="password" name="senha" id="">
             </div>
 
             <div class="emvoltaForm">
                 <label>Categoria</label>
-                <input type="" name="" id="">
+                <input type="" name="categoria" id="">
             </div>
 
             <div class="concordarInput">
@@ -59,7 +59,7 @@
             </div>
 
             <div class="divSubmit">
-                <input id="submit" type="submit" value="Cadastrar">
+                <input id="submit" onclick="validar()" type="submit" value="Cadastrar">
             </div>
         </form>
     </div>
@@ -69,5 +69,20 @@
             <span id="spanFooter">IEL - Instituto Euvaldo Lodi - Núcleo Regional de Roraima</span></p>
     </footer>
     
+    <script>
+        let campoRazaoSocial = document.getElementsByName('razaoSocial')[0];
+        let campoCnpj = document.getElementsByName('cnpj')[0];
+        let campoEmail = document.getElementsByName('email')[0];
+        let campoSenha = document.getElementsByName('senha')[0];
+        let campoCategoria = document.getElementsByName('categoria')[0];
+
+        function validar() {
+            // Validação dos campos
+            if (campoRazaoSocial.value === '' || campoCnpj.value === '' || campoEmail.value === '' || campoSenha.value === '' || campoCategoria.value === '') {
+                window.alert('Há campos em branco!!!');
+            }
+        }
+
+    </script>
 </body>
 </html>

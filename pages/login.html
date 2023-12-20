@@ -31,16 +31,16 @@
 
             <div class="emvoltaForm">
                 <label>Email</label>
-                <input type="email" name="" id="">
+                <input type="email" name="email" id="">
             </div>
 
             <div class="emvoltaForm">
                 <label>Senha</label>
-                <input type="password" name="" id="">
+                <input type="password" name="senha" id="">
             </div>
 
             <div class="divSubmit">
-                <input id="submit" type="submit" value="Cadastrar">
+                <input id="submit" onclick="validacao()" type="submit" value="Entrar">
             </div>
         </form>
     </div>
@@ -49,6 +49,18 @@
         <p>Todos os direitos reservados &copy2024 - Sistema Indústria de Roraima<br>
             <span id="spanFooter">IEL - Instituto Euvaldo Lodi - Núcleo Regional de Roraima</span></p>
     </footer>
-    
+    <script>
+        //Validação
+        let email = document.getElementsByName('email')[0]
+        let senha = document.getElementsByName('senha')[0]
+
+        function validacao() {
+            if(email.value === '' || senha.value === '') {
+                window.alert('Há campos em branco')
+            } else {
+                window.location.replace('./paginaEstudante.html')
+            }
+        }
+    </script>
 </body>
 </html>
