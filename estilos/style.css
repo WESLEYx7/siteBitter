@@ -144,17 +144,19 @@ section .abaPrincipal p {
     background-color: #0E1E6C;
     color: white;
     margin-top: 30pt;
+    margin-left: 12pt;
     cursor: pointer;
 }
+
+.abaSecundaria .conteudo .conteudoTexto #botaoSaibaMais:hover {
+    background-color: #041152;
+} 
 
 #linkSaibaMais {
     color: white;
     text-decoration: none;
 }
 
-.abaSecundaria .conteudo .conteudoTexto #botaoSaibaMais:hover {
-    background-color: #041152;
-} 
 
 .abaSecundaria .conteudo .conteudoTexto .divBotaoSaibaMais{
     width: 140px;

@@ -102,11 +102,63 @@ section .abaPrincipal #paragrafoPrimeiro {
     background-color: #F76D20;
 }
 
+.continuaTexto {
+    width: 100%;
+    height: auto;
+    margin-top: 170pt;
+    font-weight: lighter;
+    color: #474747;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.inscrevase {
+    width: 100%;
+    height: 250pt;
+    margin-top: 50pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inscrevase .inscrevaConteudo {
+    width: 80%;
+    height: 200pt;
+    border-radius: 35pt;
+    border: 1px solid #707070;
+}
+
+.inscrevase .inscrevaConteudo .titulo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20pt;
+}
+
+.inscrevase .inscrevaConteudo .titulo h2{
+    color: #0E1E6C;
+    font-weight: lighter;
+    font-size: 27px;
+}
+
+.inscrevase .inscrevaConteudo .titulo span {
+    font-weight: bold;
+}
+
+.inscrevase .inscrevaConteudo .conteudoTexto {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     background-color: #0E1E6C;
     width: 100%;
     height: 90pt;
-    margin-top: 150pt;
+    margin-top: 50pt;
     display: flex;
     align-items: center;
     justify-content: center;
