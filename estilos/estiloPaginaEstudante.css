@@ -130,6 +130,40 @@ header .links #login:hover {
 .redondos {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    margin-left: 20pt;
+}
+
+.redondos .redondosLinks {
+    width: 200pt;
+    height: 200pt;
+    margin: 62pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redondos .redondosLinks .redondoImg {
+    width: 80pt;
+    height: 80pt;
+    background-color: #0E1E6C;
+    margin: 12pt;
+    border-radius: 50%;
+}
+
+.redondos .redondosLinks h2 {
+    color: #0E1E6C;
+    margin-bottom: 8pt;
+    cursor: pointer;
+}
+
+.redondos .redondosLinks .redondoConteudo {
+    width: 100%;
+    text-align: center;
+}
+
+.redondos .redondosLinks .redondoConteudo p {
+    color: #707070;
 }
 
 footer {
@@ -185,9 +219,11 @@ footer #spanFooter {
     .redondos {
         display: flex;
         flex-direction: column;
+        margin-top: 300pt;
     }
     
-    footer {
-        margin-top: 370pt;
+    .redondos .redondosLinks {
+        margin: 30pt;
     }
+    
 }
