@@ -235,8 +235,9 @@ section .abaPrincipal p {
     margin-top: 15px; /* ou outro valor adequado */
 }
 
-.divCards #cardEmpresa {
+.divCards .card:hover {
     box-shadow: 1pt 1pt 2pt 2pt #F76D20;
+    transition: 0.5s;
 }
 
 .divCards .card .titulocard {

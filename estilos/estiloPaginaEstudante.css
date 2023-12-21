@@ -119,8 +119,15 @@ header .links #login:hover {
     margin-top: 15px; /* ou outro valor adequado */
 }
 
+/*
 .divCards #cardEmpresa {
     box-shadow: 1pt 1pt 2pt 2pt #F76D20;
+}
+*/
+
+.divCards .card:hover {
+    box-shadow: 1pt 1pt 2pt 2pt #F76D20;
+    transition: 0.5s;
 }
 
 .divCards .card .titulocard {
@@ -131,16 +138,20 @@ header .links #login:hover {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-left: 20pt;
 }
 
 .redondos .redondosLinks {
-    width: 200pt;
+    width: 220pt;
     height: 200pt;
     margin: 62pt;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.redondos .redondosLinks .redondoImg:hover {
+    box-shadow: 1pt 1pt 2pt 2pt #F76D20;
+    transition: 0.5s;
 }
 
 .redondos .redondosLinks .redondoImg {
@@ -149,6 +160,7 @@ header .links #login:hover {
     background-color: #0E1E6C;
     margin: 12pt;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .redondos .redondosLinks h2 {
