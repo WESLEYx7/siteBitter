@@ -8,7 +8,7 @@
 header {
     width: 100%;
     height: 80px;
-    background-color: #0E1E6C;
+    background-color: #F76D20;
     opacity: 1;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@ header .links a {
 }
 
 header .links a:hover {
-    color: #F76D20;
+    color: #2e4cdf;
     transition: 0.2s;
 }
 
@@ -41,5 +41,129 @@ header .links #login {
 }
 
 header .links #login:hover {
-    border: solid 2pt #fcc1a2;
+    border: solid 2pt #75a1ff;
+}
+
+.primeiraParte {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.primeiraParte .introducao {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.primeiraParte .introducao img {
+    width: 400pt;
+    margin: 30pt;
+}
+
+.primeiraParte .introducao h2 {
+    color: #707070;
+}
+
+.divCards {
+    margin-top: 30pt;
+    width: 100%;
+    height: 300pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.divCards .card {
+    height: auto;
+    width: 240pt;
+    margin: 30pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8pt;
+    box-shadow: 1pt 1pt 2pt 2pt #d1d0d0;
+    cursor: pointer;
+    padding: 20pt;
+}
+
+.divCards .card .propImg {
+    width: 130pt;
+    height: 130pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divCards .card .cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 110pt;
+}
+
+.divCards .card .divConteudoCard p {
+    color: #474747;
+}
+
+.divCards .card .titulocard h2 {
+    color: #0E1E6C;
+}
+
+.divCards .card .divConteudoCard #botaoSaibaMais {
+    margin-top: 15px; /* ou outro valor adequado */
+}
+
+.divCards #cardEmpresa {
+    box-shadow: 1pt 1pt 2pt 2pt #F76D20;
+}
+
+.divCards .card .titulocard {
+    margin-bottom: 10px;
+}
+
+.redondos {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 480px) {
+    header .links a {
+        font-size: 14pt;
+    }
+
+    header .links #login {
+        margin-top: 5px;
+    }
+
+    .primeiraParte .introducao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .primeiraParte .introducao h2 {
+        color: #707070;
+    }
+
+    .primeiraParte .introducao img {
+        width: 300pt;
+        margin: 0;
+    }
+
+    .divCards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 400pt;
+    }
+
+    .redondos {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
