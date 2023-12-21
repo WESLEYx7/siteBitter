@@ -126,7 +126,7 @@ section .abaPrincipal #paragrafoPrimeiro {
 
 .inscrevase .inscrevaConteudo {
     width: 80%;
-    height: 200pt;
+    height: 230pt;
     border-radius: 35pt;
     border: 1px solid #707070;
 }
@@ -152,6 +152,53 @@ section .abaPrincipal #paragrafoPrimeiro {
 .inscrevase .inscrevaConteudo .conteudoTexto {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 55%;
+}
+
+.inscrevase .inscrevaConteudo .conteudoTexto p {
+    color: #474747;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.inscrevase .inscrevaConteudo .conteudoTexto span {
+    font-weight: bold;
+}
+
+.inscrevase .inscrevaConteudo .botoes {
+    width: 100%;
+    height: 40pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inscrevase .inscrevaConteudo .botoes a {
+    margin: 20pt;
+    text-decoration: none;
+    padding: 7pt;
+    width: 120pt;
+    text-align: center;
+    background-color: #F76D20;
+    color: white;
+    border-radius: 8pt;
+}
+
+.inscrevase .inscrevaConteudo .botoes a:hover {
+    background-color: #c04604;
+    transition: 0.2s;
+}
+
+.inscrevase .inscrevaConteudo .botoes #entrarContato {
+    background-color: white;
+    color: #041047;
+    border: 1px solid #041047;
+}
+
+.inscrevase .inscrevaConteudo .botoes #entrarContato:hover {
+    background-color: #c7d0ff;
+    transition: 0.2s;
 }
 
 footer {
