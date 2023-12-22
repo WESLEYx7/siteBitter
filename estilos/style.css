@@ -56,8 +56,7 @@ section {
 }
 
 section .abaPrincipal {
-    width: 90%;
-    margin-left: 40pt;
+    width: 50%;
 }
 
 section .abaPrincipal h1 {
@@ -400,15 +399,21 @@ footer #spanFooter {
         margin-top: 5px;
     }
 
+    section .abaPrincipal {
+        width: 90%;
+        margin-left: 5pt;
+        margin-top: 30pt;
+    }
+
     section .abaPrincipal h1 {
         font-size: 28pt;
-        margin-top: 40pt;
+        margin-top: 400pt;
     }
 
     #imagemPrincipal {
-        width: 100%;
-        height: auto;
-        margin-right: 0;
+        width: 300pt;
+        height: 300pt;
+        margin-top: 30pt;
     }
 
     .divCards {
@@ -418,11 +423,13 @@ footer #spanFooter {
     }
 
     footer {
-        margin-top: 370pt;
+        margin-top: 70pt;
     }
 
     section {
         margin-bottom: 570pt;
+        display: flex;
+        flex-direction: column;
     }
 
     /*.abaSecundaria {
@@ -433,13 +440,23 @@ footer #spanFooter {
         margin-top: 100pt;
     }
 
-    .conteudo {
+    .abaSecundaria {
+        width: 90%;
+        height: auto;
+    }
+
+    .abaSecundaria .conteudo {
         margin-top: 20;
         display: flex;
-        
+        width: 90%;
+        height: 400pt;
     }
 
     .conteudo .conteudoTexto {
         height: 150pt;
+    }
+
+    .inscrevase {
+        margin-top: 200pt;
     }
 }
